@@ -9,10 +9,7 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
 # Inherit some common Elixir stuff.
-$(call inherit-product, vendor/aosp/config/common_full_phone.mk)
-
-# Elixir stuff
-ELIXIR_BUILD_TYPE := OFFICIAL
+$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
 # Aperture Camera
 TARGET_BUILD_APERTURE_CAMERA := true
@@ -20,7 +17,7 @@ TARGET_BUILD_APERTURE_CAMERA := true
 # Inherit from grus device
 $(call inherit-product, device/xiaomi/grus/device.mk)
 
-PRODUCT_NAME := aosp_grus
+PRODUCT_NAME := lineage_grus
 PRODUCT_DEVICE := grus
 PRODUCT_MANUFACTURER := Xiaomi
 PRODUCT_BRAND := Xiaomi
