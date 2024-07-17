@@ -14,6 +14,9 @@ $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 # Aperture Camera
 TARGET_BUILD_APERTURE_CAMERA := true
 
+# EvolutionX stuff
+TARGET_USES_PICO_GAPPS := true
+
 # Inherit from grus device
 $(call inherit-product, device/xiaomi/grus/device.mk)
 
